@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body{
+    height: 100%;
+}
+.sidebar{
+    float: left;
+    width: 250px;
+    padding: 10px 10px;
+    height: 100%;
+    overflow-y:auto ;
+    overflow-x: hidden;
+    background-color: black;
+}
+.sidebar-wrapper{
+    padding-bottom: 200px;
+}
+.sidebar__menu{
+    margin: 20px 0;
+    color: rgb(190,190, 190);
+}
+.sidebar__logo img{
+    /* valor original do max-width 250px*/
+    max-width: 130px;
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.sidebar__menu a{
+    color: rgb(190,190, 190);
+    text-decoration: none;
+    display: block;
+    padding: 10px 0 ;
+    transition: all ease .2s;
+}
+.sidebar__menu a:hover{
+    color:white;
+}
+
+.sidebar__menu svg{
+    margin: 0 20px;
+}
+.sidebar__menu a.sidebar__menu__selecionado{
+    color: white;
+    /*background-color: rgb(80,80, 80);*/
+    border-radius: 5px;
+}
+.sidebar__menu__item{
+    margin-top: 20px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+.sidebar__menu__componente img{
+    width: 25px;
+    height: 25px;
+}
