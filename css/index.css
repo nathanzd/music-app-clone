@@ -187,3 +187,40 @@ html,body{
     font-size: 13px;
    
 }
+
+/* Player ------------ */
+
+.player{
+    width: 100%;
+    padding: 20px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(60,60,60);
+}
+.player__artist{
+    width: 20%;
+}
+
+.player__artist img{
+    max-width: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.player__artist h3{
+    display: inline-block;
+    color: white;
+    font-weight: normal;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.player__artist h3 > span{
+    color: rgb(200,200,200);
+    font-size: 13px;
+
+}
