@@ -193,6 +193,7 @@ html,body{
 .player{
     width: 100%;
     padding: 20px;
+    /* Height original 130px*/
     height: 80px;
     position: absolute;
     left: 0;
@@ -223,4 +224,34 @@ html,body{
     color: rgb(200,200,200);
     font-size: 13px;
 
+}
+.player__control{
+    width: 70%;
+    text-align: center;
+}
+.player__control__buttons a {
+    color: white;
+    margin: 8px 15px;
+    font-size: 18px;
+
+}
+.player__control__progress{
+    width: 100%;
+    max-width: 600px;
+    height: 7px;
+    margin-top: 20px;
+    position: relative;
+    border-radius: 8px;
+    display: inline-block;
+    background: rgb(130,130,130);
+
+}
+.player__control__progress_2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 7px;
+    border-radius: 8px;
+    background: white;
 }
