@@ -194,7 +194,7 @@ html,body{
     width: 100%;
     padding: 20px;
     /* Height original 130px*/
-    height: 80px;
+    height: 100px;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -202,7 +202,7 @@ html,body{
     background-color: rgb(60,60,60);
 }
 .player__artist{
-    width: 20%;
+    width: 25%;
 }
 
 .player__artist img{
@@ -255,3 +255,23 @@ html,body{
     border-radius: 8px;
     background: white;
 }
+
+@media screen and (max-width:1700px) {
+    .main__col{
+        
+    } 
+}
+
+@media screen and (max-width:600px){
+    .main{
+        width: 100%;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main__col{
+        width: 48%;
+        margin-right: 2%;
+    }
+}
+
