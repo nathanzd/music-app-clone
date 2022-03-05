@@ -26,8 +26,10 @@ playBtn.addEventListener('click',(event)=>{
 const playSong=(file)=>{
     if(loaded==false){
         audioPlayer.innerHTML=`<source src="${file}" type="audio/mp3"></source>`
+        audioPlayer.load();
         loaded=true
     }
+    
     audioPlayer.play();
     playBtn.style.display="none";
     pauseBtn.style.display="inline"
@@ -40,14 +42,15 @@ document.querySelectorAll('.main__col').forEach(item => {
         let artist=item.getAttribute('data-artist')
         let song=item.getAttribute('data-song');
         let file=item.getAttribute('data-file');
-        console.log()
-
+        
+        loaded=false
         let playerArtistComponent=document.getElementsByClassName('player__artist')
 
         playerArtistComponent[0].innerHTML=`
         <img src="${image}"/>
         <h3>${artist}<br/><span>${song}</span></h3>
         `
+        
         playSong(file)
     })
 })
